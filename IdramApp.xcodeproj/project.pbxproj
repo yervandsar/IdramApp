@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3ED5062527C26ACD00222BC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5062427C26ACD00222BC7 /* AppDelegate.swift */; };
+		3ED5062927C26ACD00222BC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5062827C26ACD00222BC7 /* ViewController.swift */; };
+		3ED5062C27C26ACD00222BC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED5062A27C26ACD00222BC7 /* Main.storyboard */; };
+		3ED5062E27C26ACF00222BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED5062D27C26ACF00222BC7 /* Assets.xcassets */; };
+		3ED5063127C26ACF00222BC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED5062F27C26ACF00222BC7 /* LaunchScreen.storyboard */; };
+		3ED5063C27C26ACF00222BC7 /* IdramAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5063B27C26ACF00222BC7 /* IdramAppTests.swift */; };
+		3ED5064627C26ACF00222BC7 /* IdramAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5064527C26ACF00222BC7 /* IdramAppUITests.swift */; };
+		3ED5064827C26ACF00222BC7 /* IdramAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5064727C26ACF00222BC7 /* IdramAppUITestsLaunchTests.swift */; };
+		3ED5065527C26B0800222BC7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3ED5065427C26B0800222BC7 /* README.md */; };
+		3ED5065727C26B0C00222BC7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3ED5065627C26B0C00222BC7 /* LICENSE */; };
+		3ED5065927C26B4700222BC7 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 3ED5065827C26B4700222BC7 /* .swift-version */; };
+		3ED5065B27C26B6300222BC7 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5065A27C26B6300222BC7 /* Package.swift */; };
+		3ED5065D27C26B8E00222BC7 /* IdramApp.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3ED5065C27C26B8E00222BC7 /* IdramApp.podspec */; };
+		3ED5066427C26CBD00222BC7 /* IdramError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5066327C26CBD00222BC7 /* IdramError.swift */; };
+		3ED5066627C26F3600222BC7 /* IdramManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5066527C26F3600222BC7 /* IdramManager.swift */; };
+		3ED5066827C2704F00222BC7 /* IdramLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5066727C2704F00222BC7 /* IdramLink.swift */; };
+		3ED5066A27C2711700222BC7 /* IdramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5066927C2711700222BC7 /* IdramApp.swift */; };
+		3ED5066C27C272CA00222BC7 /* IdramConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5066B27C272CA00222BC7 /* IdramConfig.swift */; };
+		3ED5066E27C2BA4300222BC7 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5066D27C2BA4300222BC7 /* Notification+Extensions.swift */; };
+		3ED5067027C2BA8200222BC7 /* IdramListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5066F27C2BA8200222BC7 /* IdramListener.swift */; };
+		3ED5067227C2BD5200222BC7 /* IdramResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5067127C2BD5200222BC7 /* IdramResponse.swift */; };
+		3ED5067427C2BE3400222BC7 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5067327C2BE3400222BC7 /* URL+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3ED5063827C26ACF00222BC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ED5061927C26ACD00222BC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ED5062027C26ACD00222BC7;
+			remoteInfo = IdramApp;
+		};
+		3ED5064227C26ACF00222BC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ED5061927C26ACD00222BC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ED5062027C26ACD00222BC7;
+			remoteInfo = IdramApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3ED5062127C26ACD00222BC7 /* IdramApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdramApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED5062427C26ACD00222BC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3ED5062827C26ACD00222BC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3ED5062B27C26ACD00222BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3ED5062D27C26ACF00222BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3ED5063027C26ACF00222BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3ED5063227C26ACF00222BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED5063727C26ACF00222BC7 /* IdramAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdramAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED5063B27C26ACF00222BC7 /* IdramAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdramAppTests.swift; sourceTree = "<group>"; };
+		3ED5064127C26ACF00222BC7 /* IdramAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdramAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED5064527C26ACF00222BC7 /* IdramAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdramAppUITests.swift; sourceTree = "<group>"; };
+		3ED5064727C26ACF00222BC7 /* IdramAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdramAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3ED5065427C26B0800222BC7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3ED5065627C26B0C00222BC7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3ED5065827C26B4700222BC7 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		3ED5065A27C26B6300222BC7 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		3ED5065C27C26B8E00222BC7 /* IdramApp.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IdramApp.podspec; sourceTree = "<group>"; };
+		3ED5066327C26CBD00222BC7 /* IdramError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdramError.swift; sourceTree = "<group>"; };
+		3ED5066527C26F3600222BC7 /* IdramManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdramManager.swift; sourceTree = "<group>"; };
+		3ED5066727C2704F00222BC7 /* IdramLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdramLink.swift; sourceTree = "<group>"; };
+		3ED5066927C2711700222BC7 /* IdramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdramApp.swift; sourceTree = "<group>"; };
+		3ED5066B27C272CA00222BC7 /* IdramConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdramConfig.swift; sourceTree = "<group>"; };
+		3ED5066D27C2BA4300222BC7 /* Notification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
+		3ED5066F27C2BA8200222BC7 /* IdramListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdramListener.swift; sourceTree = "<group>"; };
+		3ED5067127C2BD5200222BC7 /* IdramResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdramResponse.swift; sourceTree = "<group>"; };
+		3ED5067327C2BE3400222BC7 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3ED5061E27C26ACD00222BC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED5063427C26ACF00222BC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED5063E27C26ACF00222BC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3ED5061827C26ACD00222BC7 = {
+			isa = PBXGroup;
+			children = (
+				3ED5065A27C26B6300222BC7 /* Package.swift */,
+				3ED5065C27C26B8E00222BC7 /* IdramApp.podspec */,
+				3ED5065427C26B0800222BC7 /* README.md */,
+				3ED5065627C26B0C00222BC7 /* LICENSE */,
+				3ED5065827C26B4700222BC7 /* .swift-version */,
+				3ED5065E27C26BA300222BC7 /* Sources */,
+				3ED5062327C26ACD00222BC7 /* IdramApp */,
+				3ED5063A27C26ACF00222BC7 /* IdramAppTests */,
+				3ED5064427C26ACF00222BC7 /* IdramAppUITests */,
+				3ED5062227C26ACD00222BC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3ED5062227C26ACD00222BC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3ED5062127C26ACD00222BC7 /* IdramApp.app */,
+				3ED5063727C26ACF00222BC7 /* IdramAppTests.xctest */,
+				3ED5064127C26ACF00222BC7 /* IdramAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3ED5062327C26ACD00222BC7 /* IdramApp */ = {
+			isa = PBXGroup;
+			children = (
+				3ED5062427C26ACD00222BC7 /* AppDelegate.swift */,
+				3ED5062827C26ACD00222BC7 /* ViewController.swift */,
+				3ED5062A27C26ACD00222BC7 /* Main.storyboard */,
+				3ED5062D27C26ACF00222BC7 /* Assets.xcassets */,
+				3ED5062F27C26ACF00222BC7 /* LaunchScreen.storyboard */,
+				3ED5063227C26ACF00222BC7 /* Info.plist */,
+			);
+			path = IdramApp;
+			sourceTree = "<group>";
+		};
+		3ED5063A27C26ACF00222BC7 /* IdramAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3ED5063B27C26ACF00222BC7 /* IdramAppTests.swift */,
+			);
+			path = IdramAppTests;
+			sourceTree = "<group>";
+		};
+		3ED5064427C26ACF00222BC7 /* IdramAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3ED5064527C26ACF00222BC7 /* IdramAppUITests.swift */,
+				3ED5064727C26ACF00222BC7 /* IdramAppUITestsLaunchTests.swift */,
+			);
+			path = IdramAppUITests;
+			sourceTree = "<group>";
+		};
+		3ED5065E27C26BA300222BC7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3ED5065F27C26BBA00222BC7 /* IdramApp */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3ED5065F27C26BBA00222BC7 /* IdramApp */ = {
+			isa = PBXGroup;
+			children = (
+				3ED5066227C26C6D00222BC7 /* Extensions */,
+				3ED5066127C26C5800222BC7 /* Helpers */,
+				3ED5066027C26C4A00222BC7 /* Models */,
+			);
+			path = IdramApp;
+			sourceTree = "<group>";
+		};
+		3ED5066027C26C4A00222BC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3ED5066327C26CBD00222BC7 /* IdramError.swift */,
+				3ED5066727C2704F00222BC7 /* IdramLink.swift */,
+				3ED5066B27C272CA00222BC7 /* IdramConfig.swift */,
+				3ED5067127C2BD5200222BC7 /* IdramResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3ED5066127C26C5800222BC7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3ED5066527C26F3600222BC7 /* IdramManager.swift */,
+				3ED5066927C2711700222BC7 /* IdramApp.swift */,
+				3ED5066F27C2BA8200222BC7 /* IdramListener.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3ED5066227C26C6D00222BC7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3ED5066D27C2BA4300222BC7 /* Notification+Extensions.swift */,
+				3ED5067327C2BE3400222BC7 /* URL+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3ED5062027C26ACD00222BC7 /* IdramApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED5064B27C26ACF00222BC7 /* Build configuration list for PBXNativeTarget "IdramApp" */;
+			buildPhases = (
+				3ED5061D27C26ACD00222BC7 /* Sources */,
+				3ED5061E27C26ACD00222BC7 /* Frameworks */,
+				3ED5061F27C26ACD00222BC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IdramApp;
+			productName = IdramApp;
+			productReference = 3ED5062127C26ACD00222BC7 /* IdramApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3ED5063627C26ACF00222BC7 /* IdramAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED5064E27C26ACF00222BC7 /* Build configuration list for PBXNativeTarget "IdramAppTests" */;
+			buildPhases = (
+				3ED5063327C26ACF00222BC7 /* Sources */,
+				3ED5063427C26ACF00222BC7 /* Frameworks */,
+				3ED5063527C26ACF00222BC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3ED5063927C26ACF00222BC7 /* PBXTargetDependency */,
+			);
+			name = IdramAppTests;
+			productName = IdramAppTests;
+			productReference = 3ED5063727C26ACF00222BC7 /* IdramAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3ED5064027C26ACF00222BC7 /* IdramAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED5065127C26ACF00222BC7 /* Build configuration list for PBXNativeTarget "IdramAppUITests" */;
+			buildPhases = (
+				3ED5063D27C26ACF00222BC7 /* Sources */,
+				3ED5063E27C26ACF00222BC7 /* Frameworks */,
+				3ED5063F27C26ACF00222BC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3ED5064327C26ACF00222BC7 /* PBXTargetDependency */,
+			);
+			name = IdramAppUITests;
+			productName = IdramAppUITests;
+			productReference = 3ED5064127C26ACF00222BC7 /* IdramAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ED5061927C26ACD00222BC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3ED5062027C26ACD00222BC7 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					3ED5063627C26ACF00222BC7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3ED5062027C26ACD00222BC7;
+					};
+					3ED5064027C26ACF00222BC7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3ED5062027C26ACD00222BC7;
+					};
+				};
+			};
+			buildConfigurationList = 3ED5061C27C26ACD00222BC7 /* Build configuration list for PBXProject "IdramApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3ED5061827C26ACD00222BC7;
+			productRefGroup = 3ED5062227C26ACD00222BC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3ED5062027C26ACD00222BC7 /* IdramApp */,
+				3ED5063627C26ACF00222BC7 /* IdramAppTests */,
+				3ED5064027C26ACF00222BC7 /* IdramAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3ED5061F27C26ACD00222BC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED5065D27C26B8E00222BC7 /* IdramApp.podspec in Resources */,
+				3ED5063127C26ACF00222BC7 /* LaunchScreen.storyboard in Resources */,
+				3ED5062E27C26ACF00222BC7 /* Assets.xcassets in Resources */,
+				3ED5065527C26B0800222BC7 /* README.md in Resources */,
+				3ED5062C27C26ACD00222BC7 /* Main.storyboard in Resources */,
+				3ED5065927C26B4700222BC7 /* .swift-version in Resources */,
+				3ED5065727C26B0C00222BC7 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED5063527C26ACF00222BC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED5063F27C26ACF00222BC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ED5061D27C26ACD00222BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED5066427C26CBD00222BC7 /* IdramError.swift in Sources */,
+				3ED5065B27C26B6300222BC7 /* Package.swift in Sources */,
+				3ED5066C27C272CA00222BC7 /* IdramConfig.swift in Sources */,
+				3ED5062927C26ACD00222BC7 /* ViewController.swift in Sources */,
+				3ED5067427C2BE3400222BC7 /* URL+Extensions.swift in Sources */,
+				3ED5067027C2BA8200222BC7 /* IdramListener.swift in Sources */,
+				3ED5067227C2BD5200222BC7 /* IdramResponse.swift in Sources */,
+				3ED5066627C26F3600222BC7 /* IdramManager.swift in Sources */,
+				3ED5066827C2704F00222BC7 /* IdramLink.swift in Sources */,
+				3ED5066E27C2BA4300222BC7 /* Notification+Extensions.swift in Sources */,
+				3ED5062527C26ACD00222BC7 /* AppDelegate.swift in Sources */,
+				3ED5066A27C2711700222BC7 /* IdramApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED5063327C26ACF00222BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED5063C27C26ACF00222BC7 /* IdramAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED5063D27C26ACF00222BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED5064827C26ACF00222BC7 /* IdramAppUITestsLaunchTests.swift in Sources */,
+				3ED5064627C26ACF00222BC7 /* IdramAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3ED5063927C26ACF00222BC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3ED5062027C26ACD00222BC7 /* IdramApp */;
+			targetProxy = 3ED5063827C26ACF00222BC7 /* PBXContainerItemProxy */;
+		};
+		3ED5064327C26ACF00222BC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3ED5062027C26ACD00222BC7 /* IdramApp */;
+			targetProxy = 3ED5064227C26ACF00222BC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3ED5062A27C26ACD00222BC7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ED5062B27C26ACD00222BC7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3ED5062F27C26ACF00222BC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ED5063027C26ACF00222BC7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3ED5064927C26ACF00222BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3ED5064A27C26ACF00222BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3ED5064C27C26ACF00222BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94ST773MP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IdramApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yervandsar.IdramApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3ED5064D27C26ACF00222BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94ST773MP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IdramApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yervandsar.IdramApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3ED5064F27C26ACF00222BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94ST773MP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yervandsar.IdramAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdramApp.app/IdramApp";
+			};
+			name = Debug;
+		};
+		3ED5065027C26ACF00222BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94ST773MP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yervandsar.IdramAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdramApp.app/IdramApp";
+			};
+			name = Release;
+		};
+		3ED5065227C26ACF00222BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94ST773MP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yervandsar.IdramAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IdramApp;
+			};
+			name = Debug;
+		};
+		3ED5065327C26ACF00222BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94ST773MP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yervandsar.IdramAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IdramApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ED5061C27C26ACD00222BC7 /* Build configuration list for PBXProject "IdramApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED5064927C26ACF00222BC7 /* Debug */,
+				3ED5064A27C26ACF00222BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED5064B27C26ACF00222BC7 /* Build configuration list for PBXNativeTarget "IdramApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED5064C27C26ACF00222BC7 /* Debug */,
+				3ED5064D27C26ACF00222BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED5064E27C26ACF00222BC7 /* Build configuration list for PBXNativeTarget "IdramAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED5064F27C26ACF00222BC7 /* Debug */,
+				3ED5065027C26ACF00222BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED5065127C26ACF00222BC7 /* Build configuration list for PBXNativeTarget "IdramAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED5065227C26ACF00222BC7 /* Debug */,
+				3ED5065327C26ACF00222BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3ED5061927C26ACD00222BC7 /* Project object */;
+}
