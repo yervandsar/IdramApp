@@ -8,37 +8,22 @@
 import Foundation
 import UIKit
 
+/// IdramManager declaration.
 public struct IdramManager {
-	internal static let AppStoreLink = "itms-apps://apple.com/app/id558788989"
-	internal static let IdramAppLink = "idramapp://payment"
 
-	public static var canOpenApp: Bool { canOpen(deeplink: IdramAppLink) }
+	/// Deeplink to Idram app in App Store
+	private static let AppStoreLink = "itms-apps://apple.com/app/id558788989"
+	/// Deeplink to Idram App
+	private static let IdramAppLink = "idramapp://payment"
 
+	/// Checks Idram's application availability to handle payment deeplink.
+	public static var canOpenApp: Bool { DeeplinkManager.canOpen(deeplink: IdramAppLink) }
+
+	/// Opens Idram page in App Store
 	public static func openInAppStore() {
 		DispatchQueue.main.async {
 			guard let url = URL(string: AppStoreLink), UIApplication.shared.canOpenURL(url) else { return }
 			UIApplication.shared.open(url, options: [:], completionHandler: nil)
 		}
-	}
-
-	public static func open(deeplink: String) {
-		DispatchQueue.main.async {
-			guard let url = URL(string: deeplink) else { return }
-			open(deeplink: url)
-		}
-	}
-
-	public static func open(deeplink url: URL) {
-		DispatchQueue.main.async {
-			guard UIApplication.shared.canOpenURL(url) else { return }
-			UIApplication.shared.open(url, options: [:], completionHandler: nil)
-		}
-	}
-}
-
-internal extension IdramManager {
-	static func canOpen(deeplink: String) -> Bool {
-		guard let url = URL(string: deeplink) else { return false }
-		return UIApplication.shared.canOpenURL(url)
 	}
 }

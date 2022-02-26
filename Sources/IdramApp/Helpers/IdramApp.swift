@@ -7,15 +7,22 @@
 
 import Foundation
 
+/// IdramApp declaration.
 final public class IdramApp {
 
+	/// Session for IdramApp
 	internal static let session: IdramApp = IdramApp()
 
+	/// Custom queue for session syncronization.
 	private let idramQueue = DispatchQueue(label: "IdramApp-session-queue")
 
+	/// User's Idram Id. (EDP_REC_ACCOUNT)
 	private var _account: String?
+	
+	/// URL Scheme for redirection after payment response
 	private var _callbackScheme: String?
 
+	/// User's Idram Id. (EDP_REC_ACCOUNT)
 	public var account: String {
 		guard let _account = _account else {
 			fatalError("""
@@ -28,6 +35,7 @@ Account code is required for identification your server
 		return _account
 	}
 
+	/// URL Scheme for redirection after payment response
 	public var callbackScheme: String? {
 		if _callbackScheme == nil {
 			print("""
@@ -42,6 +50,8 @@ Callback scheme is important if you want open back your app after idram payment
 
 	private init() { }
 
+	/// Configure IdramApp Session
+	/// - Parameter config: IdramConfig format for adding Account and CallbackUrl
 	public static func configure(_ config: IdramConfig) {
 		session.idramQueue.sync {
 			session._account = config.account
@@ -49,12 +59,16 @@ Callback scheme is important if you want open back your app after idram payment
 		}
 	}
 
+	/// Set Account Code
+	/// - Parameter account: User's Idram Id. (EDP_REC_ACCOUNT)
 	public static func setAccount(_ account: String) {
 		session.idramQueue.sync {
 			session._account = account
 		}
 	}
 
+	/// Set Callback URL Scheme 
+	/// - Parameter callbackScheme: URL Scheme for redirection after payment response
 	public static func setCallbackScheme(_ callbackScheme: String) {
 		session.idramQueue.sync {
 			session._callbackScheme = callbackScheme

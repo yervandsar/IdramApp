@@ -32,11 +32,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate: IdramListernerDelegate {
-	func didSuccessPayment(_ idramResponse: IdramResponse) {
-		print(idramResponse)
+	func didSuccessIdramPayment(with response: IdramResponse) {
+		print(response)
 	}
 
-	func didFailurePayment(_ idramResponse: IdramResponse) {
-		dump(idramResponse)
+	func didFailedIdramPayment(with response: IdramResponse) {
+		dump(response)
 	}
 }

@@ -7,12 +7,27 @@
 
 import Foundation
 
+/// IdramLink Declaration.
 public struct IdramLink {
+
+	/// Any Name to display in payment page
 	public let receiverName: String
+
+	/// Unique id for payment identification of merchant billing. (EDP_BILL_NO)
 	public let billNumber: String
+
+	/// Amount to pay
 	public let amount: Double
+
+	/// Ability to get Tip
 	public let hasTip: Bool
 
+	/// Initializer
+	/// - Parameters:
+	///   - receiverName: Any Name to display in payment page
+	///   - billNumber: Unique id for payment identification of merchant billing. (EDP_BILL_NO)
+	///   - amount: Amount to pay
+	///   - hasTip: Ability to get Tip
 	public init(receiverName: String, billNumber: String, amount: Double, hasTip: Bool = false) {
 		self.receiverName = receiverName
 		self.billNumber = billNumber
@@ -22,6 +37,8 @@ public struct IdramLink {
 }
 
 public extension IdramLink {
+
+	/// Generated deeplink from given parameters
 	var deeplink: String {
 		var components = URLComponents()
 		components.scheme = "idramapp"
@@ -42,7 +59,8 @@ public extension IdramLink {
 		return components.string ?? ""
 	}
 
+	/// Runs payment flow with given parameters
 	func run() {
-		IdramManager.open(deeplink: deeplink)
+		DeeplinkManager.open(deeplink: deeplink)
 	}
 }

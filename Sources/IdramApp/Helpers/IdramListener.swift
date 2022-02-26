@@ -7,14 +7,21 @@
 
 import Foundation
 
+/// IdramListernerDelegate
 public protocol IdramListernerDelegate: AnyObject {
-	func didSuccessPayment(_ idramResponse: IdramResponse)
-	func didFailurePayment(_ idramResponse: IdramResponse)
+	/// Succeed with response. `IdramResponse`
+	func didSuccessIdramPayment(with response: IdramResponse)
+	/// Failed with response. `IdramResponse`
+	func didFailedIdramPayment(with response: IdramResponse)
 }
 
+/// Idram Listener Declaration
 public class IdramListener {
+
+	/// Shared Instance
 	internal static let shared = IdramListener()
 
+	/// IdramListernerDelegate
 	public weak var delegate: IdramListernerDelegate?
 
 	private init() {
@@ -35,17 +42,21 @@ public class IdramListener {
 		guard let link = notification.object as? URL else { return }
 		let response = IdramResponse(link: link)
 		if response.success {
-			delegate?.didSuccessPayment(response)
+			delegate?.didSuccessIdramPayment(with: response)
 		} else {
-			delegate?.didFailurePayment(response)
+			delegate?.didFailedIdramPayment(with: response)
 		}
 	}
 
+	/// Response listener
+	/// - Parameter link: Response URL
 	public static func listen(link: URL) {
 		guard link.host == "payment" && link.path == "/idram" else { return }
 		NotificationCenter.default.post(name: .didReceiveIdramResponse, object: link)
 	}
 
+	/// Set Delegate to listen responses
+	/// - Parameter delegate: IdramListernerDelegate
 	public static func setDelegate(_ delegate: IdramListernerDelegate) {
 		IdramListener.shared.delegate = delegate
 	}

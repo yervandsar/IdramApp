@@ -72,12 +72,13 @@ dependencies: [
 5. Implement `IdramListenerDelegate` in `AppDelegate` to handle payment response
     ```swift
     extension AppDelegate: IdramListernerDelegate {
-	    func didSuccessPayment(_ idramResponse: IdramResponse) {
-		    // success handler
-	    }
-	    func didFailurePayment(_ idramResponse: IdramResponse) {
-		    // error handler
-	    }
+		func didSuccessIdramPayment(with response: IdramResponse) {
+			// Handle success
+		}
+
+		func didFailedIdramPayment(with response: IdramResponse) {
+			// Handle failure
+		}
     }
     ```
 6. create and run `IdramLink` on pay action
