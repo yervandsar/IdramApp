@@ -9,6 +9,6 @@ s.author           = { 'Yervand Saribekyan' => 'yervandsar@gmail.com' }
 s.source           = { :git => 'https://github.com/yervandsar/IdramApp.git', :tag => s.version.to_s }
 
 s.ios.deployment_target = '11.0'
-s.source_files     = "Sources/ExpandedTabBar/*.swift", "Sources/IdramApp/*/*.swift"
+s.source_files     = "Sources/IdramApp/*/*.swift"
 
 end
