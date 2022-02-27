@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'IdramApp'
-s.version          = '1.0.0'
+s.version          = '1.0.1'
 s.summary          = 'Idram payment handler manager'
 
 s.homepage         = 'https://github.com/yervandsar/IdramApp'

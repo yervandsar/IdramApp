@@ -57,7 +57,7 @@ public class IdramListener {
 
 	/// Set Delegate to listen responses
 	/// - Parameter delegate: IdramListernerDelegate
-	public static func setDelegate(_ delegate: IdramListernerDelegate) {
+	public static func setDelegate(_ delegate: IdramListernerDelegate?) {
 		IdramListener.shared.delegate = delegate
 	}
 }

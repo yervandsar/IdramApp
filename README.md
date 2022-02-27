@@ -1,4 +1,4 @@
-# IdramApp v1.0.0
+# IdramApp v1.0.1
 ![Platform](https://img.shields.io/badge/platform-iOS-black.svg) ![Badge w/ Version](https://img.shields.io/cocoapods/v/IdramApp.svg)  ![Platform](https://img.shields.io/badge/Swift_Package_Manager-compatible-green.svg) 
 
 
@@ -86,6 +86,8 @@ dependencies: [
 	let link = IdramLink("{Receiver Name}", billNumber: "{EDP_BILL_NO}", amount: {Price}, hasTip: {Bool - false by default})
 	link.run()
     ```
+> **NOTE:** You can call `IdramListener.setDelegate(self)` anywhere you wand and implement `IdramListenerDelegate`. 
+> To avoid problems set `nil` to delegate in implemetor's deinitializer `IdramListener.setDelegate(nil)`
 ## Support
 
 Feel free to [open issuses](https://github.com/yervandsar/IdramApp/issues/new) with any suggestions, bug reports, feature requests, questions.

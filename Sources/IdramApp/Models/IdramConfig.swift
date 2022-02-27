@@ -14,4 +14,13 @@ public struct IdramConfig {
 
 	/// URL Scheme for redirection after payment response
 	public let callbackScheme: String
+
+	/// Initializer
+	/// - Parameters:
+	///   - account: User's Idram Id. (EDP_REC_ACCOUNT)
+	///   - callbackScheme: URL Scheme for redirection after payment response
+	public init(account: String, callbackScheme: String) {
+		self.account = account
+		self.callbackScheme = callbackScheme
+	}
 }
